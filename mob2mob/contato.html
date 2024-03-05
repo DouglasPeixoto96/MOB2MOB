@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M2M CLIENTES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<header class="site_header">
+    <div class="nav_header">
+        <a href="index.html"><img class="nav_logo" src="img/logo1.png" alt="logo"></a>
+        <span ><a class="nav_texto" href="index.html">HOME</a></span>
+        <span ><a class="nav_texto" href="servicos.html">NOSSOS SERVIÇOS</a></span>
+        <span ><a class="nav_texto" href="implatacao.html">IMPLANTAÇÃO ERP</a></span>
+        <span ><a class="nav_texto" href="clientes.html">CLIENTES</a></span>     
+        <span ><a class="nav_texto" href="contato.html">CONTATO</a></span>
+    </div>
+</header>
+
+<body>
+    <h2 class="contato_titulo">Envio sua Dúvida ou Solicite um Orçamento.</h2>
+
+<form id="meuFormulario" action="mailto:contato@mob2mob.com.br" method="post">
+    <label for="Nome">Nome:</label><br>
+    <input type="text" id="nome" name="Nome" required><br><br>
+
+    <label for="E-mail">E-mail:</label><br>
+    <input type="email" id="email" name="E-mail" required><br><br>
+
+    <label for="Telefone">Telefone:</label><br>
+    <input type="tel" id="telefone" name="Telefone" required><br><br>
+
+    <label for="Mensagem">Mensagem:</label><br>
+    <textarea id="Mensagem" name="Mensagem" rows="4" required></textarea><br><br>  
+
+    <input type="submit" value="Enviar">
+</form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('meuFormulario').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+
+            // Obtém os dados do formulário
+            var formData = new FormData(this);
+
+            // Obtém o valor do campo de nome
+            var nome = formData.get('Nome');
+
+            // Define o assunto do e-mail
+            var assunto = 'Dúvidas ou Orçamento - ' + nome;
+
+            // Processa os dados do formulário para formatar o corpo do e-mail
+            var corpoEmail = '';
+            formData.forEach(function(value, key) {
+                corpoEmail += key + ': ' + value + '\n';
+            });
+
+            // Cria um link de e-mail com o corpo formatado
+            var linkEmail = 'mailto:contato@mob2mob.com.br?body=' + encodeURIComponent(corpoEmail);
+
+            // Abre o link de e-mail em uma nova janela
+            window.open(linkEmail, '_blank');
+        });
+    });
+</script>
+    
+</body>
+
+<div class="saiba_mais">
+    <span class="saiba_texto">Adentre em nossa variedade de serviços e mergulhe nas nossas especialidades exclusivas. </span>
+    <button class="button"><a class="saiba_button" href="servicos.html">Saiba Mais</a></button>
+</div>
+
+<footer>
+    <div class="contato_logo">
+        <img src="img/logo1.png" alt="logo mob2mob"> 
+    </div>
+
+    
+<div class="contato_home">        
+    <span><strong>WhatsApp : (11) 99999999</strong></span>
+    <span><strong>contato@mob2mob.com.br</a></span>
+    <span><strong>Guarulhos - SP</strong></span>        
+</div>
+
+    <div class="icones">
+            <a href="https://www.facebook.com/?locale=pt_BR"><img class="icone_rede" src="img/facebook_icone.png" alt=""></a>
+            <a href="https://web.whatsapp.com/"><img class="icone_rede" src="img/whatsapp_icone.png" alt=""></a>
+            <a href="https://www.instagram.com/"><img class="icone_rede" src="img/instagram.png" alt="instagram_icone"></a>
+            <a href="https://br.linkedin.com/"><img class="icone_rede" src="img/linkedin.png" alt="linkedin_icone"></a>
+    </div>
+
+</footer> 
+
+</html>

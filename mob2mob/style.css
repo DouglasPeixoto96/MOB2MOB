@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Conteudo Index.html ( head e header reaproveitados) */
+
+
+.site_header {
+    margin-top: 0px;
+    background: linear-gradient(to right, rgb(193, 188, 188), #ffffff);
+}
+
+
+.nav_header{
+    display: flex;
+    align-items: center;
+    font-family: "ROBOTO", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    justify-content: space-around;
+    margin-right: 10%;
+    margin-left: 15%;
+    margin-top: 1%;
+}
+
+.nav_logo{
+    height: 100px;
+    padding: 1px;
+}
+
+.nav_texto{
+    text-decoration: none;
+    font-family: "ROBOTO", sans-serif;
+    color: black;
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(to right, rgb(193, 188, 188), #ffffff);
+}
+
+.merchant_capa {
+    position: relative;
+    width: 99vw; 
+}
+
+.merchant_capa img {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+.merchant_capa::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.353); /* Cor preta semi-transparente */
+}
+
+
+.capa_texto {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+.capa_texto2 {
+    position: absolute;
+    top: 44.3%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: white;
+    font-size: 1.3rem;
+    width: 70vw;
+    z-index: 1;
+    
+}
+
+.home_texto {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(193, 188, 188), #ffffff);
+}
+
+.home_texto2 {
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+}
+
+.home_texto3 {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.fatores_titulo{
+    text-align: center;
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, rgb(193, 188, 188), #ffffff);
+    margin: 0;
+    padding: 2%;
+}
+
+.fatores_contanier {
+    display: flex;
+    background-color: white;
+    background: linear-gradient(to right, rgb(193, 188, 188), #ffffff);
+}
+
+.fatores_bloco img {
+    width: 50%;
+    height: 180px;
+    margin-left: 10%;
+   
+}
+
+.fatores_bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    width: 31%;
+}
+
+.fatores_texto {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 35px;
+    font-size: 26px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.fatores_texto2 {
+    margin-left: 3.5rem;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    padding: 1rem;
+}
+
+.saiba_mais{
+    text-align: center;
+    background: linear-gradient(to right, rgb(101, 90, 255), #b1acff);
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    padding: 4rem;
+    align-items: center;
+}
+
+.saiba_texto {
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+}
+
+.saiba_button {
+    width: 20%;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(251, 189, 19);
+    padding: 1.5rem;
+    border-radius: 40px;
+    font-weight: 700;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+}
+
+
+.button :active {
+    background-color: rgb(101, 90, 255);
+    width: 100%;
+}
+
+.contato_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+    padding: 1px;
+}
+
+.contato_home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 26px;
+    margin-top: 1%;
+    padding: 1.5%;
+    margin-left: 2%;
+    margin-right: 7%;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    margin-left: 43%;
+    margin-bottom: 1%;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.icone_rede {
+    width: 60px;
+}
+
+.contato_logo img {
+    width: 400px;
+    margin-left: 2%;
+}
+
+
+/* Conteudo servicos.html ( head e header reaproveitados) */
+
+.servicos_capa {
+    position: relative;
+    width: 100vw; 
+}
+
+.servicos_capa img {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+.servicos_capa::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.295); /* Cor preta semi-transparente */
+}
+
+.promob_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 2%;
+    padding: 5px;
+}
+
+.promob_logo img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.servicos_titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1%;
+
+}
+
+.servicos_h1 {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 900;
+    margin-bottom: 1%;
+    margin-right: 5px;
+}
+
+.servicos_texto {
+    display: block;
+    text-align: left;
+    font-size: 24px;
+    margin-left: 20%;
+    padding: 5px;
+}
+
+.servicos_titulo img{
+    width: 80px;
+    display: block;
+    position: absolute;
+    left: 65%;
+    top: 80%;
+    border-radius: 20px;
+}
+
+.mensal_conteiner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.mensal_titulo {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 900;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.mensal_subtitulo {
+    text-align: left;
+    font-size: 24px;
+    margin-left: 20%;
+    padding: 10px;
+}
+
+.mensal_texto {
+    display: block;
+    text-align: left;
+    font-size: 24px;
+    margin-left: 20%;
+    padding: 5px;
+
+}
+
+/* Conteudo implatacao.html ( head, header, footer  reaproveitados) */
+
+.erp_capa {
+    position: relative;
+    width: 100vw; 
+}
+
+.erp_capa img {
+    display: block;
+    width: 98.5%;
+    height: 500px;
+}
+
+.erp_capa::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98.5%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.418); /* Cor preta semi-transparente */
+}
+
+.erp_titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1%;
+
+}
+
+.erp_h1 {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 900;
+    margin-bottom: 1%;
+    margin-right: 5px;
+}
+
+.pontta_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 2%;
+    padding: 5px;
+}
+
+.pontta_logo img {
+    width: 80px;
+    height: 80px;
+}
+
+
+
+.erp_texto {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 24px;
+    margin-left: 20%;
+    padding: 5px;
+}
+
+.erp_titulo img{
+    width: 90px;
+    display: block;
+    position: absolute;
+    left: 71%;
+    top: 80%;
+    border-radius: 20px;
+}
+
+.img_pontta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+/* Conteudo clientes.html ( head, header, footer  reaproveitados) */
+
+.clientes_capa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.clientes_capa img {
+    display: block;
+    width: 91.5%;
+    height: 500px;
+}
+
+
+.capa_titulo {
+    font-size: 48px;
+    padding: 1%;
+}
+
+.capa_subtitulo {
+    font-size: 36px;
+    margin-bottom: 1%;
+}
+
+.logo_clientes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-left: 3%;
+    padding: 10px;
+}
+
+.clientes_img {
+    padding: 10px;
+}
+
+
+/* Conteudo contato.html ( head, header, footer  reaproveitados) */
+
+form {
+    max-width: 740px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+.contato_titulo {
+    text-align: center;
+    font-size: 40px;
+    padding: 3%;
+}
